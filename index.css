@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+body{
+    background: #F8F8F8;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 40;
+    /* padding: 50px; */
+}
+
+.custom-field{
+    position: relative;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-top: 5px;
+}
+
+.custom-field input{
+    padding: 12px;
+    width: 20rem;
+    /* width: fit-content; */
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1.5px solid gray;
+    /* outline-color: rgb(226, 21, 32);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: none; */
+}
+
+.custom-field .placeholder{
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.custom-field input:valid + .placeholder,
+.custom-field input:focus + .placeholder{
+    top: 21px;
+    font-size: 10px;
+    color: #222;
+    padding: 5px;
+    background: white;
+}
+
+.btn{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 1rem;
+    padding: 10px;
+    width: 200px;
+    margin-top:40px ;
+}
+
+.message{
+    font-size: 70px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(226, 21, 32);
+}
+
+.success{
+    font-size: 18px;
+    margin-top: 15px;
+    color: rgb(8, 80, 39);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
